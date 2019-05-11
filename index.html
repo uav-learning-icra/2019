@@ -15,6 +15,19 @@
       <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
       <link rel="stylesheet" href="build/static/css/screen.css">
       <link rel="stylesheet" href="build/static/css/custom.min.css">
+      <style>
+         table, th, td {
+         border: 1px solid black;
+         border-collapse: collapse;
+         }
+         th, td {
+         padding: 15px;
+         text-align: left;
+         }
+         tr.noBorder td {
+         border: 0;
+         }
+      </style>
    </head>
    <body>
       <!-- $Page header-->
@@ -26,7 +39,7 @@
                   <li><a class="page-header__nav-link js-anchor js-link" href="#abstract">Workshop Objectives</a></li>
                   <li><a class="page-header__nav-link js-anchor js-link" href="#speakers">Keynote Speakers</a></li>
                   <li><a class="page-header__nav-link js-anchor js-link" href="#schedule">Schedule</a></li>
-                  <li><a class="page-header__nav-link js-anchor js-link" href="#callforpapers">Call for Papers</a></li>
+                  <li><a class="page-header__nav-link js-anchor js-link" href="#callforpapers">Information For Authors</a></li>
                   <li><a class="page-header__nav-link js-anchor js-link" href="#dates">Important Dates</a></li>
                   <li><a class="page-header__nav-link js-anchor js-link" href="#organizers">People</a></li>
                </ul>
@@ -44,33 +57,34 @@
       </section>
       <!-- $Abstract section -->
       <section class="info" id="abstract">
-      	<div class="info__inner">
-      	<h2 class="info__title">Workshop Objectives</h2>
-      	<p class="info__descr">In past years, model-based techniques have successfully endowed aerial robots with impressive capabilities like high-speed navigation through unknown environments. However, task specifications, like goal positions, are often still hand-engineered. To achieve true autonomy in applications such as disaster response and environmental-monitoring, unmanned aerial vehicles (UAVs) must additionally exhibit semantic understanding of tasks and environments, adaptation to unexpected changes, and robustness to unmodeled disturbances. </p>
-		<p class="info__descr">Machine learning and deep learning have emerged as promising tools for higher-level autonomy, but are more difficult to analyze and implement in real-time. Furthermore, maintaining high thrust-to-weight ratios for agility directly contradicts the need to carry sensor and computation resources, making hardware and software architecture equally crucial decisions.</p>
-      	<p class="info__descr">This workshop aims to bring together researchers in the complementary fields of aerial robotics, learning, and systems to discuss the following themes:</p>
-      	<ul class="info__list">
-  			<li>Learning for autonomous robots - How should learning be incorporated into robots’ perception-action loops?</li>
-  			<li>Structure in learning - How can models, structure, and priors enhance learning on robots?</li>
-  			<li>Performance guarantees - How can we analyze closed-loop performance of learning-in-the-loop systems?</li>
-  			<li>Software+hardware co-design - How can we implement learning algorithms on resource-constrained UAVs? How should we simultaneously optimize algorithms and hardware choices to create lightweight, but highly-capable, UAVs?</li>
-		</ul>
-      	<p class="info__descr">The objectives of this workshop are to:</p>
-      	<ul class="info__list">
-  			<li>Discuss the aforementioned themes from the diverse perspectives of aerial robotics, learning, and systems researchers across academia, government, and industry.</li>
-  			<li>Present state-of-the-art research results related to learning-in-the-loop for UAVs through keynote talks from leaders of related fields and contributed talks and posters.</li>
-  			<li>Share details about, mistakes made, and “lessons learned” in hardware set-ups and software architectures that regular conference papers typically do not have space to expand on.</li>
-  			<li>Stimulate and accelerate research in the learning for UAVs.</li>
-		</ul>
-		<p class="info__descr">We will host invited speakers that give a broad view of the state-of-the-art. This will include academic faculty as well as industry speakers on the commercial side and research side of UAV innovation.</p>
-      	</div>
+         <div class="info__inner">
+            <h2 class="info__title">Workshop Objectives</h2>
+            <p class="info__descr">In past years, model-based techniques have successfully endowed aerial robots with impressive capabilities like high-speed navigation through unknown environments. However, task specifications, like goal positions, are often still hand-engineered. To achieve true autonomy in applications such as disaster response and environmental-monitoring, unmanned aerial vehicles (UAVs) must additionally exhibit semantic understanding of tasks and environments, adaptation to unexpected changes, and robustness to unmodeled disturbances. </p>
+            <p class="info__descr">Machine learning and deep learning have emerged as promising tools for higher-level autonomy, but are more difficult to analyze and implement in real-time. Furthermore, maintaining high thrust-to-weight ratios for agility directly contradicts the need to carry sensor and computation resources, making hardware and software architecture equally crucial decisions.</p>
+            <p class="info__descr">This workshop aims to bring together researchers in the complementary fields of aerial robotics, learning, and systems to discuss the following themes:</p>
+            <ul class="info__list">
+               <li>Learning for autonomous robots - How should learning be incorporated into robots’ perception-action loops?</li>
+               <li>Structure in learning - How can models, structure, and priors enhance learning on robots?</li>
+               <li>Performance guarantees - How can we analyze closed-loop performance of learning-in-the-loop systems?</li>
+               <li>Software+hardware co-design - How can we implement learning algorithms on resource-constrained UAVs? How should we simultaneously optimize algorithms and hardware choices to create lightweight, but highly-capable, UAVs?</li>
+            </ul>
+            <p class="info__descr">The objectives of this workshop are to:</p>
+            <ul class="info__list">
+               <li>Discuss the aforementioned themes from the diverse perspectives of aerial robotics, learning, and systems researchers across academia, government, and industry.</li>
+               <li>Present state-of-the-art research results related to learning-in-the-loop for UAVs through keynote talks from leaders of related fields and contributed talks and posters.</li>
+               <li>Share details about, mistakes made, and “lessons learned” in hardware set-ups and software architectures that regular conference papers typically do not have space to expand on.</li>
+               <li>Stimulate and accelerate research in the learning for UAVs.</li>
+            </ul>
+            <p class="info__descr">We will host invited speakers that give a broad view of the state-of-the-art. This will include academic faculty as well as industry speakers on the commercial side and research side of UAV innovation.</p>
+         </div>
       </section>
       <!-- $Team section-->
       <section class="team" id="speakers">
          <div class="team__inner">
             <h2 class="team__title">Keynote Speakers</h2>
-            <p class="team__descr"><!-- --></p>
-
+            <p class="team__descr">
+               <!-- -->
+            </p>
             <div class="team__member">
                <img src="build/static/images/bellemare.jpg" alt="Dr. Bellemare">
                <div class="team__member-info">
@@ -80,7 +94,6 @@
                   <span class="team__member-role2"><a href="http://www.marcgbellemare.info/" class="info__link">Google Brain</a></span>
                </div>
             </div>
-
             <div class="team__member">
                <img src="build/static/images/cross_2.jpg" alt="Cross">
                <div class="team__member-info">
@@ -88,10 +101,9 @@
                   <span class="team__member-role">Technical Lead</span>
                   <span class="team__member-role">State Estimation</span>
                   <span class="team__member-role2"><a href="https://www.linkedin.com/in/crossg/" class="info__link">Skydio, Inc.</a></span>
-                 <!-- <p class="team__member-descr">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>-->
+                  <!-- <p class="team__member-descr">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>-->
                </div>
             </div>
-
             <div class="team__member">
                <img src="build/static/images/kapoor.jpg" alt="Dr. Kapoor">
                <div class="team__member-info">
@@ -99,10 +111,9 @@
                   <span class="team__member-role">Principal Researcher</span>
                   <span class="team__member-role">Microsoft Research</span>
                   <span class="team__member-role2"><a href="https://www.microsoft.com/en-us/research/people/akapoor/" class="info__link">Microsoft Research</a></span>
-                 <!-- <p class="team__member-descr">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>-->
+                  <!-- <p class="team__member-descr">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>-->
                </div>
             </div>
-
             <div class="team__member">
                <img src="build/static/images/scaramuzza.jpg" alt="Prof. Scaramuzza">
                <div class="team__member-info">
@@ -110,10 +121,9 @@
                   <span class="team__member-role">Professor and Director</span>
                   <span class="team__member-role">Robotics and Perception Group</span>
                   <span class="team__member-role2"><a href="http://rpg.ifi.uzh.ch/people_scaramuzza.html" class="info__link">ETH Zurich</a></span>
-                 <!-- <p class="team__member-descr">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>-->
+                  <!-- <p class="team__member-descr">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>-->
                </div>
             </div>
-
             <div class="team__member">
                <img src="build/static/images/tapia.jpg" alt="Prof. Tapia">
                <div class="team__member-info">
@@ -121,77 +131,252 @@
                   <span class="team__member-role">Associate Professor</span>
                   <span class="team__member-role">Department of Computer Science</span>
                   <span class="team__member-role2"><a href="https://www.cs.unm.edu/tapialab/People/tapia/index.php" class="info__link">Uni. of New Mexico</a></span>
-                 <!-- <p class="team__member-descr">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>-->
+                  <!-- <p class="team__member-descr">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>-->
                </div>
             </div>
-
          </div>
       </section>
       <!-- $Schedule -->
       <section class="info" id="schedule">
-      	<div class="info__inner">
-      	<h2 class="info__title">Schedule</h2>
-      	<p class="info__descr">Final schedule coming soon!</p>
-      	<h3 class="info__title2">Accepted Papers</h3>
-      	<p class="info__descr">"Safe Learning-Enabled Decision-Making for Autonomous Navigation in Unknown Environments", Somil Bansal.</p>
-      	<p class="info__descr">"Understanding the Power Consumption of Executing Deep Neural Networks on a Distributed Robot System", Ramyad Hadidi, Jiashen Cao, Matthew Merck, Arthur Siqueira, Qiusen Huang, Abhijeet Saraha, Chunjun Jia, Bingyao Wang, Dongsuk Lim, Lixing Liu and Hyesoon Kim.</p>
-      	<p class="info__descr">"Toward Exploring End-to-End Learning Algorithms for Autonomous Aerial Machines", Srivatsan Krishnan, Behzad Boroujerdian, Aleksandra Faust and Vijay Janapa Reddi.</p>
-      	<p class="info__descr">"Learning to Race in New Environments", Elia Kaufmann and Davide Scaramuzza.</p>
-      	<p class="info__descr">"Robust Adaptive Model Predictive Control for High-Accuracy Trajectory Tracking in Changing Conditions", Karime Pereida and Angela Schoellig.</p>
-      	<p class="info__descr">"Socially Aware Motion Planning for a Flying Robot with Model Predictive Path Integral Control", Hyung‑jin Yoon, Pan Zhao, Chuyuan Tao, Christopher Widdowson, Ranxiao Wang, Naira Hovakimyan and Evangelos Theodorou.</p>
-      	</div>
+         <div class="info__inner">
+            <h2 class="info__title">Schedule</h2>
+            <table style="width:100%">
+               <col width="10">
+               <col width="500">
+               <tr>
+                  <td>8:30</td>
+                  <td>Opening Remarks</td>
+               </tr>
+               <tr class="noBorder">
+                  <td></td>
+                  <td></td>
+               </tr>
+               <!-------------------------->
+               <tr>
+                  <td></td>
+                  <td><b>Session 1: Safety and Robustness in Dynamic Enviornments</td>
+               </tr>
+               <tr>
+                  <td>8:30&mdash;9:30</td>
+                  <td>
+                     <p class="info__descr">Keynote: Prof. Lydia Tapia</p>
+                     <p><i>Motion Planning Under Uncertain Conditions</i></p>
+                     <br>
+                     <p>Navigation uncertainty comes from many sources, both internal to the robot, e.g., control or
+                        localization uncertainty, or external to the robot, e.g., changes in or uncertainty of the world
+                        around the robot. In this talk, we will address multiple forms of uncertainty that impact
+                        autonomous navigation. First, we consider navigation in environments that are changing
+                        stochastically. Current solutions are able to directly integrate stochastic changes that occur
+                        during navigation and provide real-time capable solutions for navigation. Next, we consider
+                        transition uncertainty that occurs when an action is taken but the outcome is unexpected.
+                        Through adaptation of learned plans, adjustment to certain forms of transition uncertainty can
+                        occur. Finally, we consider model uncertainty, a lack of precision or error in the world model
+                        used to navigate. Through an exploration of state-of-art approaches in both learning and
+                        traditional planning-based, we will address both the real-time feasibly and the best conditions for
+                        currently proposed navigation solutions under uncertainty.
+                     </p>
+                     <br>
+                     <p>Bio: Lydia Tapia is an Associate Professor in the Department of Computer Science at the University
+                        of New Mexico. She received her Ph.D. in Computer Science from Texas A&amp;M University and
+                        her B.S. in Computer Science from Tulane University. Her research contributions are focused on
+                        the development of computationally efficient algorithms for the simulation and analysis of high-
+                        dimensional motions for robots and molecules. Specifically, she explores problems in
+                        computational structural biology, motion under stochastic uncertainty, and reinforcement
+                        learning. Based on this work, she has been awarded two patents, one on a novel unmanned aerial
+                        vehicle design and another on a method to design allergen treatments. Lydia is the recipient of
+                        the 2016 Denice Denton Emerging Leader ABIE Award from the Anita Borg Institute, a 2016
+                        NSF CAREER Award for her work on simulating molecular assembly, and the 2017 Computing
+                        Research Association Committee on the Status of Women in Computing Research (CRA-W)
+                        Borg Early Career Award.
+                     </p>
+                  </td>
+               </tr>
+               <tr>
+                  <td>9:30&mdash;9:45</td>
+                  <td>Paper Presentation: "Safe Learning-Enabled Decision-Making for Autonomous Navigation in Unknown Environments", Somil Bansal.</td>
+               </tr>
+               <tr>
+                  <td>9:45&mdash;10:00</td>
+                  <td>Paper Presentation: "Robust Adaptive Model Predictive Control for High-Accuracy Trajectory Tracking in Changing Conditions", Karime Pereida and Angela Schoellig.</td>
+               </tr>
+               <tr class="noBorder">
+                  <td></td>
+                  <td></td>
+               </tr>
+               <!-------------------------->
+               <tr>
+                  <td>10:00&mdash;10:30</td>
+                  <td><b>Coffee Break</b></td>
+               </tr>
+               <tr class="noBorder">
+                  <td></td>
+                  <td></td>
+               </tr>
+               <!-------------------------->
+               <tr>
+                  <td></td>
+                  <td><b>Session 2</td>
+               </tr>
+               <tr>
+                  <td>10:30&mdash;11:30</td>
+                  <td>
+                     <p class="info__descr">Keynote: Prof. Davide Scaramuzza</p>
+                     <p>Bio: Davide Scaramuzza (born in 1980, Italian) is Professor of Robotics and Perception at both departments of Informatics (University of Zurich) and Neuroinformatics (University of Zurich and ETH Zurich), where he does research at the intersection of robotics, computer vision, and neuroscience. Specifically he investigates the use of standard and neuromorphic cameras to enable autonomous, agile, navigation of micro drones in search-and-rescue scenarios. 
+                        He did his PhD in robotics and computer vision at ETH Zurich (with Roland Siegwart) and a postdoc at the University of Pennsylvania (with Vijay Kumar and Kostas Daniilidis). From 2009 to 2012, he led the European project sFly, which introduced the PX4 autopilot and pioneered visual-SLAM-based autonomous navigation of micro drones. 
+                        For his research contributions in vision-based navigation with standard and neuromorphic cameras, he was awarded the IEEE Robotics and Automation Society Early Career Award, the SNSF-ERC Starting Grant, a Google Research Award, KUKA, Qualcomm, and Intel awards, the European Young Research Award, the Misha Mahowald Neuromorphic Engineering Award, and several conference paper awards. 
+                        He coauthored the book "Introduction to Autonomous Mobile Robots" (published by MIT Press; 10,000 copies sold) and more than 100 papers on robotics and perception published in top-ranked journals (TRO, PAMI, IJCV, IJRR) and conferences (RSS, ICRA, CVPR, ICCV). 
+                        In 2015, he cofounded a venture, called Zurich-Eye, dedicated to the commercialization of visual-inertial navigation solutions for mobile robots, which later became Facebook-Oculus Switzerland and Oculus' European research hub. He was also the strategic advisor of Dacuda, an ETH spinoff dedicated to inside-out VR solutions, which later became Magic Leap Zurich. 
+                        Many aspects of his research have been prominently featured in the popular press, such as Discovery Channel, BBC, IEEE Spectrum, MIT Technology Review Magazine.
+                     </p>
+                  </td>
+               </tr>
+               <tr>
+                  <td>11:30&mdash;12:30</td>
+                  <td>
+                     <p class="info__descr">Keynote: Dr. Ashish Kapoor</p>
+                  </td>
+               </tr>
+               <tr class="noBorder">
+                  <td></td>
+                  <td></td>
+               </tr>
+               <!-------------------------->
+               <tr>
+                  <td>12:30&mdash;13:30</td>
+                  <td><b>Lunch</b></td>
+               </tr>
+               <tr class="noBorder">
+                  <td></td>
+                  <td></td>
+               </tr>
+               <!-------------------------->
+               <tr>
+                  <td></td>
+                  <td><b>Session 3: Learning from Humans and for Humans</td>
+               </tr>
+               <tr>
+                  <td>13:30&mdash;14:30</td>
+                  <td>
+                     <p class="info__descr">Keynote: Gareth Cross</p>
+                  </td>
+               </tr>
+               <tr>
+                  <td>14:30&mdash;14:45</td>
+                  <td>Paper Presentation: "Socially Aware Motion Planning for a Flying Robot with Model Predictive Path Integral Control", Hyung‑jin Yoon, Pan Zhao, Chuyuan Tao, Christopher Widdowson, Ranxiao Wang, Naira Hovakimyan and Evangelos Theodorou.</td>
+               </tr>
+               <tr>
+                  <td>14:30&mdash;15:00</td>
+                  <td>Paper Presentation: "Learning to Race in New Environments", Elia Kaufmann and Davide Scaramuzza.</td>
+               </tr>
+               <tr class="noBorder">
+                  <td></td>
+                  <td></td>
+               </tr>
+               <!-------------------------->
+               <tr>
+                  <td>15:00&mdash;15:30</td>
+                  <td><b>Coffee Break</b></td>
+               </tr>
+               <tr class="noBorder">
+                  <td></td>
+                  <td></td>
+               </tr>
+               <!-------------------------->
+               <tr>
+                  <td></td>
+                  <td><b>Session 4: Deep Learning in the Wild</td>
+               </tr>
+               <tr>
+                  <td>15:30&mdash;16:30</td>
+                  <td>
+                     <p class="info__descr">Keynote: Dr. Marc Bellemare</p>
+                     <p><i>Deep Reinforcement Learning and the Atari 2600</i></p>
+                     <br>
+                     <p>This talk looks back at how deep reinforcement learning research has developed in recent years, and the role played by the Arcade Learning Environment (ALE) and Atari 2600 video games in establishing deep RL as its own field of research. I will focus on the particular challenges posed by the ALE, and the deep learning approach to solving these problems. I will conclude with insights into more recent applications of deep reinforcement learning: what makes it work, and what are some of the key problems that remain unanswered.</p>
+                     <br>
+                     <p>Bio: Marc G. Bellemare leads the reinforcement learning efforts at Google Brain in Montreal and holds a Canada CIFAR AI Chair at the Quebec Artificial Intelligence Institute (Mila). He received his Ph.D. from the University of Alberta, where he developed the highly-successful Arcade Learning Environment, the platform that sparked the recent revival in reinforcement learning research. He joined DeepMind in 2013 prior to its acquisition by Google and was research scientist there until his return to Canada in 2017. During his tenure at DeepMind he made major contributions to deep reinforcement learning, in particular pioneering the distributional method. Marc G. Bellemare is also a CIFAR Learning in Machines & Brains Fellow and an adjunct professor at McGill University.</p>
+                  </td>
+               </tr>
+               <tr>
+                  <td>16:30&mdash;16:45</td>
+                  <td>Paper Presentation: "Toward Exploring End-to-End Learning Algorithms for Autonomous Aerial Machines", Srivatsan Krishnan, Behzad Boroujerdian, Aleksandra Faust and Vijay Janapa Reddi.</td>
+               </tr>
+               <tr>
+                  <td>16:45&mdash;17:00</td>
+                  <td>Paper Presentation: "Understanding the Power Consumption of Executing Deep Neural Networks on a Distributed Robot System", Ramyad Hadidi, Jiashen Cao, Matthew Merck, Arthur Siqueira, Qiusen Huang, Abhijeet Saraha, Chunjun Jia, Bingyao Wang, Dongsuk Lim, Lixing Liu and Hyesoon Kim.</td>
+               </tr>
+               <tr class="noBorder">
+                  <td></td>
+                  <td></td>
+               </tr>
+               <!-------------------------->
+               <tr>
+                  <td></td>
+                  <td><b>Session 5: Interactive Session</td>
+               </tr>
+               <tr>
+                  <td>17:00&mdash;17:30</td>
+                  <td>Details to come!</td>
+               </tr>
+            </table>
+            <br>
+         </div>
       </section>
       <!-- $Call for papers -->
       <section class="info2" id="callforpapers">
-      	<div class="info2__inner">
-      	<h2 class="info2__title">Call for Papers</h2>
-      	<p class="info2__descr">We are soliciting submissions of 4-page short papers (not including references) with up to a 2-minute accompanying video. Possible topics of interest include, but are not limited to:</p>
-      	<ul class="info2__list">
-  			<li>Combining model-based and model-free methods for autonomous robotics</li>
-  			<li>Online learning and adaptation in mapping, perception, planning, and/or control for UAVs</li>
-  			<li>End-to-end learning of perception-action loops for flight</li>
-  			<li>Sample efficient learning on flying robots</li>
-   			<li>Learning for high-level autonomy in applications such as (but not limited to) disaster response, cinematography, search and rescue, environmental monitoring, aerial manipulation, agriculture, and inspection</li>
-  			<li>Closed-loop analysis learning-in-the-loop systems</li>
-  			<li>Metrics for evaluating the benefits of incorporating learning into perception-action loops or incorporating models into learning algorithms</li>
-  			<li>Challenges implementing learning algorithms in real-time on sensorimotor systems</li>
-  			<li>Novel architectures that use multi-agent networks or the cloud to decentralize demanding computations</li>
-  			<li>Insights into architecture design, system component choice, and implementation details (including “failed designs”) of real-time learning-in-the-loop algorithms</li>
-		</ul>
-      	<p class="info2__descr">We welcome work with experimental validation (including initial preliminary results) or addressing challenges associated with real-world implementation. We also welcome simulation-only papers that convincingly address why the utilized simulator is a compelling representation of real-world conditions and papers with validation on other robotics platforms that could be applied to UAVs. We especially encourage papers that share valuable “failure analyses” or “lessons learned” that would benefit the community. We welcome work at all stages of research, including work-in-progress and recently accepted or published results.</p>
-      	</div>
+         <div class="info2__inner">
+         	<h2 class="info2__title">Information For Authors</h2>
+         	<p class="info2__descr">At least one author from each accepted paper should be registed for the ICRA workshops (note this is separate from registration for the main conference). Please prepare for a 15-minute oral presentation (including Q&A) on May 24th. Please upload finals versions of submitted abstracts through <a href="https://easychair.org/my/conference.cgi?conf=lsaf19" class="info2__link">via Easychair</a> by May 20th. </p>
+            <h2 class="info2__title">Call for Papers</h2>
+            <p class="info2__descr">We are soliciting submissions of 4-page short papers (not including references) with up to a 2-minute accompanying video. Possible topics of interest include, but are not limited to:</p>
+            <ul class="info2__list">
+               <li>Combining model-based and model-free methods for autonomous robotics</li>
+               <li>Online learning and adaptation in mapping, perception, planning, and/or control for UAVs</li>
+               <li>End-to-end learning of perception-action loops for flight</li>
+               <li>Sample efficient learning on flying robots</li>
+               <li>Learning for high-level autonomy in applications such as (but not limited to) disaster response, cinematography, search and rescue, environmental monitoring, aerial manipulation, agriculture, and inspection</li>
+               <li>Closed-loop analysis learning-in-the-loop systems</li>
+               <li>Metrics for evaluating the benefits of incorporating learning into perception-action loops or incorporating models into learning algorithms</li>
+               <li>Challenges implementing learning algorithms in real-time on sensorimotor systems</li>
+               <li>Novel architectures that use multi-agent networks or the cloud to decentralize demanding computations</li>
+               <li>Insights into architecture design, system component choice, and implementation details (including “failed designs”) of real-time learning-in-the-loop algorithms</li>
+            </ul>
+            <p class="info2__descr">We welcome work with experimental validation (including initial preliminary results) or addressing challenges associated with real-world implementation. We also welcome simulation-only papers that convincingly address why the utilized simulator is a compelling representation of real-world conditions and papers with validation on other robotics platforms that could be applied to UAVs. We especially encourage papers that share valuable “failure analyses” or “lessons learned” that would benefit the community. We welcome work at all stages of research, including work-in-progress and recently accepted or published results.</p>
+         </div>
       </section>
       <!-- $Dates -->
       <section class="info" id="dates">
-      	<div class="info__inner">
-      	<h2 class="info__title">Important Dates</h2>
-      	<p class="info__descr">Paper submission deadline: <s>24-Mar-2019, 11:59PM Anywhere on Earth (AOE)</s> EXTENDED: 7-Apr-2019, 11:59PM Anywhere on Earth (AOE)</p>
-      	<p class="info__descr">Author notification: <s>25-Apr-2019</s> 3-May-2019</p>
-      	<p class="info__descr">Workshop: 24-May-2019</p>
-		<p class="info__descr">Submission link: <a href="https://easychair.org/my/conference.cgi?conf=lsaf19" class="info__link">via Easychair</a></p>
-		<p class="info__descr">Paper submission instructions: IEEE templates for <a href="http://ras.papercept.net/conferences/support/tex.php"  class="info__link">LaTeX</a> and <a href="http://ras.papercept.net/conferences/support/word.php" class="info__link">MS-Word</a> are available from the IEEE PaperPlaza website. Final submissions should be in pdf format.</p>
-		<p class="info__descr">Video submission instructions: Please include a link to any videos in the text of the submission. Videos can be uploaded to Youtube (as an unlisted video), Dropbox, Google Drive, or a personal webpage. Please make sure to verify video permission settings.</p>
-		<p class="info__descr">Any additional questions can be directed to: lsaf19@easychair.org</p>
-      	</div>
+         <div class="info__inner">
+            <h2 class="info__title">Important Dates</h2>
+            <p class="info__descr">Paper submission deadline: <s>24-Mar-2019, 11:59PM Anywhere on Earth (AOE)</s> EXTENDED: 7-Apr-2019, 11:59PM Anywhere on Earth (AOE)</p>
+            <p class="info__descr">Author notification: <s>25-Apr-2019</s> 3-May-2019</p>
+            <p class="info__descr">Workshop: 24-May-2019</p>
+            <p class="info__descr">Submission link: <a href="https://easychair.org/my/conference.cgi?conf=lsaf19" class="info__link">via Easychair</a></p>
+            <p class="info__descr">Paper submission instructions: IEEE templates for <a href="http://ras.papercept.net/conferences/support/tex.php"  class="info__link">LaTeX</a> and <a href="http://ras.papercept.net/conferences/support/word.php" class="info__link">MS-Word</a> are available from the IEEE PaperPlaza website. Final submissions should be in pdf format.</p>
+            <p class="info__descr">Video submission instructions: Please include a link to any videos in the text of the submission. Videos can be uploaded to Youtube (as an unlisted video), Dropbox, Google Drive, or a personal webpage. Please make sure to verify video permission settings.</p>
+            <p class="info__descr">Any additional questions can be directed to: lsaf19@easychair.org</p>
+         </div>
       </section>
       <!-- $Organizers -->
       <section class="info2" id="organizers">
-      	<div class="info2__inner">
-      	<h2 class="info2__title">Program Commitee</h2>
-      	<p class="info2__descr"><a href="https://natanaso.github.io/" class="info2__link"></p>
-      	<p class="info2__descr"><a href="http://www.ece.unm.edu/faculty-staff/electrical-and-computer/rafael-fierro.html" class="info2__link">Prof. Rafael Fierro</a></p>
-      	<p class="info2__descr"><a href="https://karolhausman.github.io/" class="info2__link">Dr. Karol Hausman</a></p>
-      	<p class="info2__descr"><a href="http://asl.stanford.edu/people/brian-ichter/" class="info2__link">Dr. Brian Ichter</a></p>
-      	<p class="info2__descr"><a href="https://sites.google.com/site/ipalunkosite/home/about" class="info2__link">Prof. Ivana Palunko</a></p> 
-      	<p class="info2__descr"><a href="https://karolhausman.github.io/" class="info2__link">Dr. Sebastian Trimpe</a></p>
-      	</div>
-      	<div class="info2__inner">
-      	<h2 class="info2__title">Organizers</h2>
-      	<p class="info2__descr"><a href="https://www.afaust.info/home" class="info2__link">Dr. Aleksandra Faust:</a> Staff Research Scientist, Google Brain, faust@google.com</p>
-      	<p class="info2__descr"><a href="https://www.seas.harvard.edu/directory/vjanapa-reddi" class="info2__link">Prof. Vijay Janapa Reddi:</a> Associate Professor, Harvard University, vjreddi@seas.harvard.edu</p>
-      	<p class="info2__descr"><a href="http://www.dynsyslab.org/prof-angela-schoellig/" class="info2__link">Prof. Angela Schoellig:</a> Assistant Professor, University of Toronto, schoellig@utias.utoronto.ca</p>
-      	<p class="info2__descr"><a href="http://www.sarahtang.net/" class="info2__link">Dr. Sarah Tang:</a> Robotics Software Engineer, Nuro, Inc./University of Pennsylvania, sytang@alumni.seas.upenn.edu</p>      	
-      	</div>
+         <div class="info2__inner">
+            <h2 class="info2__title">Program Commitee</h2>
+            <p class="info2__descr">
+               <a href="https://natanaso.github.io/" class="info2__link">
+            </p>
+            <p class="info2__descr"><a href="http://www.ece.unm.edu/faculty-staff/electrical-and-computer/rafael-fierro.html" class="info2__link">Prof. Rafael Fierro</a></p>
+            <p class="info2__descr"><a href="https://karolhausman.github.io/" class="info2__link">Dr. Karol Hausman</a></p>
+            <p class="info2__descr"><a href="http://asl.stanford.edu/people/brian-ichter/" class="info2__link">Dr. Brian Ichter</a></p>
+            <p class="info2__descr"><a href="https://sites.google.com/site/ipalunkosite/home/about" class="info2__link">Prof. Ivana Palunko</a></p>
+            <p class="info2__descr"><a href="https://karolhausman.github.io/" class="info2__link">Dr. Sebastian Trimpe</a></p>
+         </div>
+         <div class="info2__inner">
+            <h2 class="info2__title">Organizers</h2>
+            <p class="info2__descr"><a href="https://www.afaust.info/home" class="info2__link">Dr. Aleksandra Faust:</a> Staff Research Scientist, Google Brain, faust@google.com</p>
+            <p class="info2__descr"><a href="https://www.seas.harvard.edu/directory/vjanapa-reddi" class="info2__link">Prof. Vijay Janapa Reddi:</a> Associate Professor, Harvard University, vjreddi@seas.harvard.edu</p>
+            <p class="info2__descr"><a href="http://www.dynsyslab.org/prof-angela-schoellig/" class="info2__link">Prof. Angela Schoellig:</a> Assistant Professor, University of Toronto, schoellig@utias.utoronto.ca</p>
+            <p class="info2__descr"><a href="http://www.sarahtang.net/" class="info2__link">Dr. Sarah Tang:</a> Robotics Software Engineer, Nuro, Inc./University of Pennsylvania, sytang@alumni.seas.upenn.edu</p>
+         </div>
       </section>
       <!-- $Page footer-->
       <footer class="page-footer">
