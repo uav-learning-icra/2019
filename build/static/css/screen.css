@@ -612,8 +612,8 @@ body{
 .team__member{
     display:inline-block;
     position:relative;
-    width:220px;
-    margin:0 30px 30px;
+    width:230px;
+    margin:0 80px 80px;
     background-color:#fff
 }
 .team__member img{
