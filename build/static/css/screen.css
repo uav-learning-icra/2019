@@ -539,9 +539,11 @@ body{
     text-align:left
 }
 .info__link {
+    font-size:16px;
     color: #3CB371;
 }
 .info2__link {
+    font-size:18px;
     color: #B0B0B0;
 }
 .info2{
